@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+        <script defer src="js/formulario.js"></script>
+        <meta name="viewport" content="width=device-width, user-scalable=no"/>
+        <meta charset="utf-8">
+        <link rel="stylesheet" href="estilosint1.css">
+        <title>Formulario de datos</title>
+    </head>
+    <body>
+        <nav>
+            <div class="nav-wrapper #448aff blue accent-2">
+                <a href="#" class="brand-logo center hide-on-med-and-down"> CHACABUCO MORON </a><img src="img/Logo_Chaca.png" width="5%"    class="hide-on-med-and-down"/>
+                <a href="#" class="brand-logo center hide-on-large-only"> CHACABUCO MORON </a><img src="img/Logo_Chaca.png" width="10%"  class="hide-on-large-only"/> </a>
+    
+                <ul id="nav" class="hide-on-med-and-down right">
+                    
+                    <li><a href="index.html">INICIO</a></li> 
+                    <li><a href="salado.html">NOTICIAS</a></li>
+                    <li><a href="login.html">Login</a></li>  
+                </ul>
+
+                <ul id="mobile-menu" class="hide-on-large-only right">
+                        <li><a href="index.html"><i class="material-icons">home</i></a></li>
+                        <li><a href="salado.html"><i class="material-icons">receipt</i></a></li>
+                        <li><a href="login.html"><i class="material-icons">person</i></a></li>
+    
+                </ul>
+                
+            </div>
+        </nav>
+        <form action="https://mailthis.to/damiiarebalo@gmail.com" method="POST">
+            <h4>Formulario de contacto</h4>
+            <p>Por favor, complete todos los campos:</p>
+            <div class="row">
+                <div class="input-field">
+                    <i class="material-icons prefix">account_circle</i>
+                    <input id="nombre" type="text" class="validate">
+                    <label class="active" for="nombre">Nombre completo</label>
+                    <span class="helper-text" data-error="sin numeros bro" data- success="Ok"> </span>
+                </div>
+            </div>
+            <div class="row">
+                <div class="input-field">
+                    <i class="material-icons prefix">email</i>
+                    <input id="email" type="email" class="validate">
+                    <label class="active" for="nombre">Email</label>
+                    <span class="helper-text" data-error="Email invalido" data- success="Ok"> </span>
+                </div>
+            </div> 
+        
+            <div>
+                <div class="input-field">
+                    <i class="material-icons prefix">today</i>
+                    <input id="fnacimiento" type="date" class="validate">
+                    <label class="active" for="fnacimiento">dd/mm/aaaa</label>
+                    <span class="helper-text" data-error="Fecha ingresada errónea" data- success="Ok"> </span>
+                </div>
+            </div>
+
+            <div class="row center">
+                <button class="waves-effect waves-teal btn-flat" 
+                type="submit" name="action">Enviar
+                <i class="material-icons right">send</i>
+                </button>
+            </div>
+        </form>    
+    
+        <footer class="page-footer grey darken-3"> 
+            <div class="container">
+             @ 2021 Copyright Chaca
+            <a class="grey-text   text-lighten-4 right"   href="http://www.mipagina.com/contacto/" target="_blank">Escríbanos</a> 
+            </div>
+
+        </footer>        
+
+    </body>
+</html>
